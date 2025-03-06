@@ -9,9 +9,16 @@ trigger:
 pool:
   vmImage: windows-latest
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+stages:
+  - stage: Build
+  displayName:'Build
+  jobs:
+    job: Build
+    displayName:'Build
+    steps:
+  ''
+  
+
 
 - script: |
    terraform {
